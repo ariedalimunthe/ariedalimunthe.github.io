@@ -194,12 +194,7 @@
     $(".rotate").textrotator({
       speed: 1500,
     });
-    var audio = document.getElmentById("audio_1");
-    var audio2 = document.getElmentById("audio_2");
-    audio2.pause();
-    audio.addEventListener("ended", function () {
-      audio_2.play();
-    });
+
 
     var win = $(window),
       foo = $('#typer');
@@ -217,6 +212,12 @@
       });
     }).resize();
     // unneeded...
+    var audio = document.getElmentById("audio_1");
+    var audio2 = document.getElmentById("audio_2");
+    audio2.pause();
+    audio.addEventListener("ended", function () {
+      audio_2.play();
+    });
   </script>
 </body>
 
