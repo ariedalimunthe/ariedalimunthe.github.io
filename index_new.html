@@ -196,10 +196,17 @@
       foo = $('#typer');
 
     foo.typer([
-      '<i>Untuk seluruh kerabat teman, saudara, dan keluargaku tercinta. Jika saya ada salah baik dalam ucapan maupun sikap yang kurang berkenan</i> <br><i>Ku sampaikan permohonan maaf sepenuh hati di hari yang penuh kemuliaan ini. <br>Selamat IdulFitri, mohon maaf lahir dan batin</i>'
+      '<i>Untuk seluruh kerabat, teman, saudara, dan keluargaku tercinta. Jika saya ada salah baik dalam ucapan maupun sikap yang kurang berkenan</i> <br><i>Ku sampaikan permohonan maaf sepenuh hati di hari yang penuh kemuliaan ini. <br>Selamat IdulFitri, mohon maaf lahir dan batin</i>'
 
     ]);
+    win.resize(function () {
+      var fontSize = Math.max(Math.min(win.width() / (1 * 10), parseFloat(Number.POSITIVE_INFINITY)),
+        parseFloat(Number.NEGATIVE_INFINITY));
 
+      foo.css({
+        fontSize: fontSize * .4 + 'px'
+      });
+    }).resize();
     // unneeded...
   </script>
 </body>
