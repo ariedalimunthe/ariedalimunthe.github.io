@@ -60,7 +60,7 @@
 
 
 <body class="profile-page ">
-
+  <audio src="audio2.mp3" id="my_audio" loop="loop" autoplay="autoplay"></audio>
   <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
     <div class=" container">
       <a class="navbar-brand mr-lg-5 navbar-header" href="#">
@@ -214,10 +214,9 @@
     ]);
   </script>
   <script>
-    $(document).ready(function () {
-      const audio = new Audio("audio2.mp3");
-      audio.play();
-    });
+    window.onload = function () {
+      document.getElementById("my_audio").play();
+    }
   </script>
   <script>
     const container = document.querySelector('.fireworks')
