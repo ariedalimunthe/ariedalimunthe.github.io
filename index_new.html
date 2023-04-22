@@ -56,8 +56,11 @@
 
 <body class="profile-page">
 
-  <audio autoplay loop>
-    <source src="assets/audio2.mp3">
+  <iframe src="assets/audio2.mp3" allow="autoplay" id="audio" hidden></iframe>
+  <!-- <iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none;"></iframe> -->
+  <audio id="player" autoplay controls loop>
+    <source src="assets/audio2.mp3" type="audio/mp3">
+    <source src="audio.org" type="audio/org">
   </audio>
 
   <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
