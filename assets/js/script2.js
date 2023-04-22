@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $(".enter").click(function () {
         unlock($(".enter"));
-        const audio = new Audio("audio2.mp3");
+        const audio = new Audio("audio_merge.mp3");
         audio.play();
     });
 });
