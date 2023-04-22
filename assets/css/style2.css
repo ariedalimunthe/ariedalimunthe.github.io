@@ -26,7 +26,7 @@ html,
     display: inline-block;
     width: calc(50% - 2.5px);
     height: 100%;
-    background-image: url('pintumobile.png');
+    background-image: url('pintumobile.PNG');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -129,7 +129,7 @@ html,
         display: inline-block;
         width: calc(50% - 2.5px);
         height: 100%;
-        background-image: url('pintumobile.png');
+        background-image: url('pintumobile.PNG');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
