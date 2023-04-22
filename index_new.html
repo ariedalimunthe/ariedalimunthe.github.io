@@ -51,7 +51,13 @@
 
 
 <body class="profile-page">
-
+  <audio controls id="listenLive1">
+    <source src="assets/audio1.mp3" type="audio/mpeg">
+  </audio>
+  <br><br>
+  <audio controls id="listenLive2">
+    <source src="assets/audio2.mp3" type="audio/mpeg">
+  </audio>
 
   <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
     <div class=" container">
@@ -204,13 +210,6 @@
       '<i>Untuk seluruh kerabat, teman, saudara, dan keluargaku tercinta. Jika saya ada salah baik dalam ucapan maupun sikap yang kurang berkenan</i>. <i>Ku sampaikan permohonan maaf sepenuh hati di hari yang penuh kemuliaan ini. <br>Selamat IdulFitri, mohon maaf lahir dan batin.</i><br> 🙏🤝'
 
     ]);
-
-    function musicStart() {
-      pop = window.open('', 'back__music', 'width=100,height=100', true);
-      if (back__music.location.href === 'about:blank') {
-        pop.document.write('<audio controls autoplay loop><source src="./assets/audio.mp3" type="audio/mp3"/></audio>');
-      }
-    }
   </script>
 </body>
 
