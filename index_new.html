@@ -28,6 +28,7 @@
   <!-- CSS Files -->
   <link href="assets/argon/assets/css/argon-design-system.css" rel="stylesheet" />
   <link href="assets/css/rotate.css" rel="stylesheet" />
+  <link href="assets/css/style2.css" rel="stylesheet" />
   <!-- <link href="assets/assets/demos.css" rel="stylesheet" /> -->
   <style>
     .text-shadow {
@@ -54,13 +55,97 @@
       background-size: cover;
       background-repeat: no-repeat;
     }
+
+    .door {
+      height: 100%;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .door {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 18796;
+    }
+
+    .door .left,
+    .door .right {
+      font-size: 10pt;
+      display: inline-block;
+      width: calc(50% - 2.5px);
+      height: 100%;
+      background-image: url('https://img.freepik.com/free-vector/ramadan-kareem-wishes-greeting-with-mosque-door_1017-30695.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .door .left {
+      float: left;
+      border-right: solid 2.5px #ab6b21;
+    }
+
+    .door .right {
+      float: right;
+      border-left: solid 2.5px #ab6b21;
+    }
+
+    .enter {
+      cursor: pointer;
+      display: block;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 30px;
+      width: 100px;
+      text-align: center;
+      line-height: 30px;
+      border-radius: 5px;
+      z-index: 18797;
+      position: absolute;
+      padding: 5px 10px;
+      margin: auto;
+      background: #ab6b21;
+      color: #fff;
+      border: solid 3px #fff;
+      font-weight: bold;
+    }
+
+    .enter:hover {
+      background: #fff;
+      color: #ab6b21;
+      border: solid 3px #ab6b21;
+    }
+
+    .ml10 {
+      position: relative;
+      font-weight: 900;
+      font-size: 2.6em;
+      color: #fff;
+    }
+
+    .ml10 .letter {
+      display: inline-block;
+      line-height: 1.5em;
+      transform-origin: 0 0;
+    }
   </style>
-  <!-- /HEAD -->
+
 </head>
 
 
 <body class="profile-page ">
-  <audio src="audio2.mp3" id="my_audio" loop="loop" autoplay="autoplay"></audio>
+  <div class='enter'>OPEN</div>
+  <div class='door'>
+    <div class='left'></div>
+    <div class='right'></div>
+  </div>
+
   <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
     <div class=" container">
       <a class="navbar-brand mr-lg-5 navbar-header" href="#">
@@ -213,11 +298,7 @@
 
     ]);
   </script>
-  <script>
-    window.onload = function () {
-      document.getElementById("my_audio").play();
-    }
-  </script>
+
   <script>
     const container = document.querySelector('.fireworks')
     const fireworks = new Fireworks.default(container)
