@@ -51,13 +51,15 @@
 
 
 <body class="profile-page">
-  <audio controls id="listenLive1">
+  <audio controls>
     <source src="assets/audio1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
   </audio>
-  <br><br>
-  <audio controls id="listenLive2">
+  <audio controls>
     <source src="assets/audio2.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
   </audio>
+
 
   <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
     <div class=" container">
@@ -210,6 +212,16 @@
       '<i>Untuk seluruh kerabat, teman, saudara, dan keluargaku tercinta. Jika saya ada salah baik dalam ucapan maupun sikap yang kurang berkenan</i>. <i>Ku sampaikan permohonan maaf sepenuh hati di hari yang penuh kemuliaan ini. <br>Selamat IdulFitri, mohon maaf lahir dan batin.</i><br> 🙏🤝'
 
     ]);
+  </script>
+  <script>
+    document.addEventListener('play', function (e) {
+      var audios = document.getElementsByTagName('audio');
+      for (var i = 0, len = audios.length; i < len; i++) {
+        if (audios[i] != e.target) {
+          audios[i].pause();
+        }
+      }
+    }, true);
   </script>
 </body>
 
