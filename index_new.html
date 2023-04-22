@@ -76,6 +76,7 @@
     <div class="page-header header-filter">
       <div class="page-header-image" style="background-image: url('assets/images/aa.jpg');"></div>
       <div class="container">
+        <div id="firework"></div>
         <div class="row">
           <div class="d-flex align-items-center justify-content-center px-3 mx-auto">
 
@@ -198,6 +199,9 @@
   <script src="assets/argon/assets/js/plugins/bootstrap-datepicker.min.js"></script>
   <script src="assets/js/rotate.js"></script>
   <script src="assets/dist/jquery.typer.js"></script>
+  <script
+    src="https://www.jqueryscript.net/demo/Realistic-Fireworks-Animations-Using-jQuery-And-Canvas-fireworks-js/jquery.fireworks.js">
+  </script>
 
 
   <script src="assets/argon/assets/js/argon-design-system.min.js?v=1.2.0" type="text/javascript"></script>
@@ -223,6 +227,13 @@
       snd.load();
       snd.play();
     }
+  </script>
+  <script>
+    $('#firework').fireworks({
+      sound: true, // sound effect
+      width: '100%',
+      height: '100%'
+    });
   </script>
 </body>
 
