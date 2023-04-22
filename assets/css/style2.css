@@ -3,7 +3,7 @@ html,
     height: 100%;
     width: 100%;
     position: relative;
-    overflow: hidden;
+
 }
 
 
@@ -23,7 +23,7 @@ html,
 .door .left,
 .door .right {
     font-size: 10pt;
-    display: inline-block;
+
     width: calc(50% - 2.5px);
     height: 100%;
     background-image: url('pintumobile.PNG');
@@ -109,9 +109,9 @@ html,
         border-radius: 5px;
         z-index: 18797;
         position: absolute;
-        padding: 5px 10px;
+        padding: 0px 10px;
         margin: auto;
-        background: #005870;
+        background: #252727;
         color: #fff;
         border: solid 3px #fff;
         font-weight: bold;
@@ -135,41 +135,5 @@ html,
         background-position: center;
     }
 
-    .kotakutama {
-        overflow-y: hidden;
-        width: 100%;
-        height: 100%;
-        background-image: url('bg.jpg');
-        background-position: center;
-        background-size: 300% 100%;
-        background-repeat: no-repeat;
-    }
 
-    .kotakutama .bedug {
-        width: 80%;
-        position: absolute;
-        bottom: 0;
-        left: 5%;
-    }
-
-    .kotakteks {
-        top: 50%;
-        width: 100%;
-        position: absolute;
-        left: calc(50% - 50%);
-        text-align: center;
-    }
-
-    .ml10 {
-        position: relative;
-        font-weight: 900;
-        font-size: 1.6em;
-        color: #fff;
-    }
-
-    .ml10 .letter {
-        display: inline-block;
-        line-height: 1em;
-        transform-origin: 0 0;
-    }
 }
