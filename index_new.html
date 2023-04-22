@@ -51,6 +51,8 @@
 
 
 <body class="profile-page">
+  <audio autoplay id="audio_1" src="assets/audio1.mp3"></audio>
+  <audio loop id="audio_2" src="assets/audio2.mp3"></audio>
   <!-- Navbar -->
   <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
     <div class=" container">
@@ -190,6 +192,12 @@
   <script>
     $(".rotate").textrotator({
       speed: 1500,
+    });
+    var audio = document.getElmentById("audio_1");
+    var audio2 = document.getElmentById("audio_2");
+    audio2.pause();
+    audio.addEventListener("ended", function () {
+      audio_2.play();
     });
 
     var win = $(window),
