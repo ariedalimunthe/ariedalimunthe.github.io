@@ -6,37 +6,7 @@ html,
     overflow: hidden;
 }
 
-body {
-    font-size: 10pt;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    overflow-x: hidden !important;
-}
 
-.kotakteks {
-    top: 45%;
-    width: 100%;
-    position: absolute;
-    left: calc(50% - 50%);
-    text-align: center;
-}
-
-.kotakutama {
-    overflow-y: hidden;
-    width: 100%;
-    height: 100%;
-    background-image: url('bg4.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.kotakutama .bedug {
-    width: 30%;
-    position: absolute;
-    bottom: 0;
-}
 
 .door {
     position: absolute;
@@ -162,30 +132,6 @@ body {
         background-position: center;
     }
 
-    .kotakutama {
-        overflow-y: hidden;
-        width: 100%;
-        height: 100%;
-        background-image: url('bg.jpg');
-        background-position: center;
-        background-size: 300% 100%;
-        background-repeat: no-repeat;
-    }
-
-    .kotakutama .bedug {
-        width: 80%;
-        position: absolute;
-        bottom: 0;
-        left: 5%;
-    }
-
-    .kotakteks {
-        top: 50%;
-        width: 100%;
-        position: absolute;
-        left: calc(50% - 50%);
-        text-align: center;
-    }
 
     .ml10 {
         position: relative;
