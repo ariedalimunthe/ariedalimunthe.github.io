@@ -1,0 +1,60 @@
+/* Reset default browser styles */
+
+/* Video container */
+.video-container {
+    width: 100%;
+    max-width: 600px;
+    /* Optional: max width for larger screens */
+    margin: 20px 0;
+}
+
+/* Responsive video element */
+video {
+    width: 100%;
+    height: auto;
+}
+
+/* Background video styling */
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    /* Ensure background */
+    overflow: hidden;
+}
+
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+}
+
+/* CSS untuk membuat border yang tidak tajam */
+.video-container {
+    border-radius: 10px;
+    /* Menyesuaikan nilai sesuai keinginan Anda */
+    overflow: hidden;
+    /* Mengatur agar video tetap dalam border yang dibuat */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Menambahkan shadow untuk efek yang lebih lembut */
+}
+
+/* CSS untuk video container */
+.video-container {
+    border-radius: 10px;
+    /* Menyesuaikan nilai sesuai keinginan Anda */
+    overflow: hidden;
+    /* Mengatur agar video tetap dalam border yang dibuat */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Menambahkan shadow untuk efek yang lebih lembut */
+    border: 2px solid white;
+    /* Menambahkan garis border putih dengan ketebalan 2px */
+}
