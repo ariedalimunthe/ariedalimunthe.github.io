@@ -65,7 +65,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-body border-top navbar-expand d-md-none d-lg-none d-xl-none fixed-bottom">
+    <!-- <nav class="navbar navbar-light bg-body border-top navbar-expand d-md-none d-lg-none d-xl-none fixed-bottom">
         <ul class="navbar-nav nav-justified w-100">
             <li class="nav-item">
                 <a href="#" data-bs-target="#profile" data-bs-toggle="modal" class="nav-link">
@@ -74,7 +74,7 @@
                 </a>
             </li>
         </ul>
-    </nav>
+    </nav> -->
 
     <nav class="navbar navbar-expand border-bottom py-2 bg-body fixed-top">
         <div class='container'>
@@ -83,6 +83,10 @@
             </a>
             <div class='collapse navbar-collapse justify-content-end' id='navbarSupportedContent'>
                 <ul class='navbar-nav ml-auto'>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" data-bs-target="#profile" data-bs-toggle="modal"
+                            href="#">Profile</a>
+                    </li>
                     <li class='nav-item dropdown'>
                         <button aria-expanded='false'
                             class='btn btn-link nav-link py-2 me-2 dropdown-toggle d-flex align-items-center'
@@ -409,14 +413,14 @@
         (() => {
             'use strict'
 
-            const storedTheme = localStorage.setItem('theme', 'dark');
+            const storedTheme = localStorage.setItem('theme', 'auto');
 
             const getPreferredTheme = () => {
                 if (storedTheme) {
                     return storedTheme
                 }
 
-                return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'dark'
+                return window.matchMedia('(prefers-color-scheme: auto)').matches ? 'auto' : 'auto'
             }
 
             const setTheme = function (theme) {
